@@ -12,8 +12,8 @@ jobs:
       - name: Build container
         uses: docker/build-push-action@v1
         with:
-          username: Programmable-Keymasher
+          username: programmable-keymasher
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: Programmable-Keymasher/publish-packages/game
+          repository: programmable-keymasher/publish-packages/game
           tag_with_sha: true
